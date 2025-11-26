@@ -7,19 +7,19 @@
 
 * pip
 
-- WHAT
+** WHAT
 
--- pip 是 Python 的包管理工具，可以帮助我们安装三方库和三方工具
+pip 是 Python 的包管理工具，可以帮助我们安装三方库和三方工具
 直接使用 pip install 默认会将包安装到系统 Python 环境（如 /usr/lib/python3.x/site-packages/），这可能与 pacman 安装的包路径重叠，导致版本混乱、依赖冲突，甚至破坏系统工具（如 pacman 本身依赖某些 Python 模块）
 
-- HOW
+** HOW
 
 建议安装 pipx，优先使用官方仓库中的 Python 包
 
 
 * pipx
 
-- WHAT
+** WHAT
 
 pipx 是 Arch 社区广泛推荐的解决方案
 自动创建独立虚拟环境：每个应用及其依赖隔离存放，互不干扰
@@ -29,7 +29,7 @@ pipx 是 Arch 社区广泛推荐的解决方案
 
 ** HOW
 
-- 安装
+*** 安装
 
 #+begin_src shell
   sudo pacman -S python-pipx
@@ -37,7 +37,7 @@ pipx 是 Arch 社区广泛推荐的解决方案
   # sudo pipx ensurepath --global
 #+end_src
 
-- 镜像
+*** 镜像
 
 path: $HOME/.config/pip/pip.conf
 
@@ -46,7 +46,7 @@ path: $HOME/.config/pip/pip.conf
   index-url = https://pypi.tuna.tsinghua.edu.cn/simple/
 #+end_src
 
-- 命令
+*** 命令
 
 #+begin_src shell
   pipx install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple 包
