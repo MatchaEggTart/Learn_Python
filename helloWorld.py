@@ -2,7 +2,7 @@
 第一个Python程序 - hello, world
 
 Version: 1.0
-Author: MatchaEggTart
+Author: 骆昊
 """
 
 print('Hello, World')

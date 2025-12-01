@@ -32,9 +32,9 @@ pipx 是 Arch 社区广泛推荐的解决方案
 *** 安装
 
 #+begin_src shell
-  sudo pacman -S python-pipx
-  pipx ensurepath
-  # sudo pipx ensurepath --global
+sudo pacman -S python-pipx
+pipx ensurepath
+# sudo pipx ensurepath --global
 #+end_src
 
 *** 镜像
@@ -42,16 +42,25 @@ pipx 是 Arch 社区广泛推荐的解决方案
 path: $HOME/.config/pip/pip.conf
 
 #+begin_src js
-  [global]
-  index-url = https://pypi.tuna.tsinghua.edu.cn/simple/
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple/
 #+end_src
 
 *** 命令
 
 #+begin_src shell
-  pipx install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple 包
-  pipx list
-  pipx uninstall 包
-  pipx upgrade
-  pipx upgrade-all
+pipx install -i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple 包
+pipx list
+pipx uninstall 包
+pipx upgrade
+pipx upgrade-all
+#+end_src
+
+
+* python-ts-mode
+
+** 安装
+
+#+begin_src shell
+pipx install python-lsp-server
 #+end_src
